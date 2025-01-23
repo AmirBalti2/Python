@@ -74,3 +74,26 @@ else:
 #string indexing 
 user_name="Ali"
 print(user_name[::1])
+#Your Name character finder
+name=input("Enter your name ")
+find=input("Enter the character you want to find ")
+if find in name:
+    print("The character is found and its {} ".format(find))
+else:
+    print("The character is not found")
+
+#Find Alhopabet in the your name
+name=input("Enter your name ")
+name=name.lower()
+vowels=("a,i,o,u,e")
+translate_table=str.maketrans("aeiou","bbbbb")
+name=name.translate(translate_table)
+name=name.replace(vowels,"b")
+print(name)
+# Mini project Reverse you name
+name=input("Enter your name ")
+len_name=len(name)
+end_index=len_name+1
+name=name[-1:-end_index:-1]
+print(name)
+
